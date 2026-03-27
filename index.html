@@ -121,32 +121,28 @@
 
         .letter-paper.active { opacity: 1; transform: translateY(0); }
 
+        /* ENSURES 2 COLUMNS ALWAYS */
         .message-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            gap: 40px;
             margin-top: 60px;
         }
 
         .message-box { text-align: center; padding-bottom: 30px; position: relative; }
-        .message-text { font-style: italic; line-height: 1.9; font-size: 1.1rem; color: #4a4a4a; margin-bottom: 15px; }
+        .message-text { font-style: italic; line-height: 1.7; font-size: 1rem; color: #4a4a4a; margin-bottom: 15px; }
         .author-info { display: flex; align-items: center; justify-content: center; margin-top: 10px; }
-        .author-name { font-family: 'Dancing Script', cursive; font-size: 1.4rem; color: var(--rose-gold); }
+        .author-name { font-family: 'Dancing Script', cursive; font-size: 1.3rem; color: var(--rose-gold); }
         .author-img { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; margin-left: 15px; border: 3px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
-        .gift-footer {
-            margin-top: 100px;
-            text-align: center;
-            padding: 50px;
-            background: #fdfafb;
-            border-radius: 15px;
-        }
-        .ksh-img { width: 280px; border-radius: 10px; margin-bottom: 25px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-
         @media (max-width: 850px) {
-            .message-grid { grid-template-columns: 1fr; }
-            .letter-paper { padding: 40px 20px; }
+            /* Kept at 2 columns for phone */
+            .message-grid { grid-template-columns: 1fr 1fr; gap: 15px; }
+            .letter-paper { padding: 40px 15px; }
             .main-title { font-size: 3rem; }
+            .message-text { font-size: 0.75rem; line-height: 1.4; }
+            .author-name { font-size: 0.9rem; }
+            .author-img { width: 45px; height: 45px; margin-left: 8px; }
         }
     </style>
 </head>
@@ -178,9 +174,7 @@
             <div class="message-grid">
 
                 <div class="message-box">
-                    <p class="message-text">"Thank you so much, Teacher, for these past four years and for always seeing my potential. Your belief that I could do better truly paid off in the end.
-
-I could not have done it without you. Please also receive this sincere appreciation from the PA Representative.✨"</p>
+                    <p class="message-text">"Thank you so much, Teacher, for these past four years and for always seeing my potential. Your belief that I could do better truly paid off in the end. I could not have done it without you. Please also receive this sincere appreciation from the PA Representative.✨"</p>
                     <div class="author-info">
                         <span class="author-name">Mutua Mutua </span>
                         <img src="Joshua.jpg" class="author-img">
@@ -196,9 +190,7 @@ I could not have done it without you. Please also receive this sincere appreciat
                 </div>
 
                 <div class="message-box">
-                    <p class="message-text">"Thank you for giving me a shot at leadership and for believing in us when everything seemed bleak. I am so grateful for the motherly love and nourishment you gave, even during the times we made you angry.
-
-Our success is truly indebted to you. I hope we live up to your expectations and make you incredibly proud! 🎓🌟"</p>
+                    <p class="message-text">"Thank you for giving me a shot at leadership and for believing in us when everything seemed bleak. I am so grateful for the motherly love and nourishment you gave, even during the times we made you angry. Our success is truly indebted to you. I hope we live up to your expectations and make you incredibly proud! 🎓🌟"</p>
                     <div class="author-info">
                         <span class="author-name">Lincoln</span>
                         <img src="Lincoln.jpg" class="author-img">
@@ -214,11 +206,7 @@ Our success is truly indebted to you. I hope we live up to your expectations and
                 </div>
 
                 <div class="message-box">
-                    <p class="message-text">"Four years ago, I entered the great Baricho not knowing what it offered or what it had in store for me. Through my four years, you have taught me Kiswahili, made me love the subject, given me advice, and stood by me in every possible way a mother stands by her son.
-
-You made me rethink my every move and, above all, made me believe in myself. I am short of words of gratitude, but you have produced a man for society—a son that will make you proud.
-
-Thank you, Madam Beatrice, for all you’ve done for me. ASANTE SANA. ❤️❤️💝"</p>
+                    <p class="message-text">"Four years ago, I entered the great Baricho not knowing what it offered or what it had in store for me. Through my four years, you have taught me Kiswahili, made me love the subject, given me advice, and stood by me in every possible way a mother stands by her son. You made me rethink my every move and, above all, made me believe in myself. I am short of words of gratitude, but you have produced a man for society—a son that will make you proud. Thank you, Madam Beatrice, for all you’ve done for me. ASANTE SANA. ❤️❤️💝"</p>
                     <div class="author-info">
                         <span class="author-name">Momanyi</span>
                         <img src="Momanyi.jpg" class="author-img">
@@ -226,13 +214,7 @@ Thank you, Madam Beatrice, for all you’ve done for me. ASANTE SANA. ❤️❤�
                 </div>
 
                 <div class="message-box">
-                    <p class="message-text">"To Madam Beatrice,
-
-All I want to say is thank you for being there for us during these four years of our lives as 4M. I know it was very difficult for you to cope with us since we were quite stubborn, but we always looked up to you because you bore with us until the very end, and that makes me so glad.
-
-Thank you for giving us such good advice about the life ahead and for the memories we shared together as a class—both the good and the bad—which I will never forget.
-
-You will always be a mother to me, even as we move on, and I will always pray for God to shower you with blessings in everything you do in your life. 🙏✨ I will be grateful again and again, and I will never stop thanking you."</p>
+                    <p class="message-text">"To Madam Beatrice, All I want to say is thank you for being there for us during these four years of our lives as 4M. I know it was very difficult for you to cope with us since we were quite stubborn, but we always looked up to you because you bore with us until the very end, and that makes me so glad. Thank you for giving us such good advice about the life ahead and for the memories we shared together as a class—both the good and the bad—which I will never forget. You will always be a mother to me, even as we move on, and I will always pray for God to shower you with blessings in everything you do in your life. 🙏✨ I will be grateful again and again, and I will never stop thanking you."</p>
                     <div class="author-info">
                         <span class="author-name">Escriva</span>
                         <img src="Escriva.jpg" class="author-img">
@@ -240,15 +222,7 @@ You will always be a mother to me, even as we move on, and I will always pray fo
                 </div>
 
                 <div class="message-box">
-                    <p class="message-text">"Hi Madam Beatrice,
-
-It has been long, but we are doing alright out here. Yes, it is a bit hard, but that’s just how life is. I know we are more than ready to pass through the challenges it has ready for us. 💪
-
-I am writing this message as an appreciation of how much you have been a caring mother to us since you picked us up in Form One, when you barely even knew us. You took us through the journey of high school up to Form Four to complete our studies and achieve the best grades we could. 📚✨
-
-I know the journey wasn’t a smooth ride; it had its ups and downs, but that’s what made that life thrilling. Every single day, no matter how angry we would make you, you still chose us, stood with us, and believed in us until the very end. ❤️
-
-I sincerely wouldn’t ask for a better class teacher than you. Your legacy as our high school mum will always live in us. Thank you for everything you did for us; your hard work truly paid off. 🎓🙌"</p>
+                    <p class="message-text">"Hi Madam Beatrice, It has been long, but we are doing alright out here. Yes, it is a bit hard, but that’s just how life is. I know we are more than ready to pass through the challenges it has ready for us. 💪 I am writing this message as an appreciation of how much you have been a caring mother to us since you picked us up in Form One, when you barely even knew us. You took us through the journey of high school up to Form Four to complete our studies and achieve the best grades we could. 📚✨ every single day, no matter how angry we would make you, you still chose us, stood with us, and believed in us until the very end. ❤️ I sincerely wouldn’t ask for a better class teacher than you. Your legacy as our high school mum will always live in us. Thank you for everything you did for us; your hard work truly paid off. 🎓🙌"</p>
                     <div class="author-info">
                         <span class="author-name">Vincent</span>
                         <img src="Vincent.jpg" class="author-img">
@@ -256,15 +230,7 @@ I sincerely wouldn’t ask for a better class teacher than you. Your legacy as o
                 </div>
 
                 <div class="message-box">
-                    <p class="message-text">"Dearest Madam Beatrice,
-
-As I look back on these four years, I realize that I entered Baricho as a boy and, because of you, I am leaving as a man. I want to thank you from the bottom of my heart for being so much more than just a class teacher. You were my guide, my mentor, and truly a mother to me when I needed one most.
-
-I will never forget how you stood by me during my most difficult times. Even when I had a case and things felt heavy, you didn't turn your back on me. Instead, you chose to believe in me when it felt like no one else did. You saw the best in me even when I couldn't see it in myself, and your constant encouragement was the fuel that kept me going. ⚓❤️
-
-Thank you for your patience, your correction, and your unwavering faith in my potential. You taught me that my mistakes do not define me, but how I rise from them does. I am so lucky to have had a "high school mum" who fought for me and pushed me to reach for the best.
-
-I promise to carry the values you instilled in me and to make you proud in everything I do next. Your legacy doesn’t just stay at Baricho; it lives on in me. 🎓🌟"</p>
+                    <p class="message-text">"Dearest Madam Beatrice, As I look back on these four years, I realize that I entered Baricho as a boy and, because of you, I am leaving as a man. I want to thank you from the bottom of my heart for being so much more than just a class teacher. You were my guide, my mentor, and truly a mother to me when I needed one most. I will never forget how you stood by me during my most difficult times. Even when I had a case and things felt heavy, you didn't turn your back on me. Instead, you chose to believe in me when it felt like no one else did. You saw the best in me even when I couldn't see it in myself, and your constant encouragement was the fuel that kept me going. ⚓❤️ Thank you for your patience, your correction, and your unwavering faith in my potential. You taught me that my mistakes do not define me, but how I rise from them does. I am so lucky to have had a \"high school mum\" who fought for me and pushed me to reach for the best. I promise to carry the values you instilled in me and to make you proud in everything I do next. Your legacy doesn’t just stay at Baricho; it lives on in me. 🎓🌟"</p>
                     <div class="author-info">
                         <span class="author-name">Kibagio</span>
                         <img src="Kibagz.jpg" class="author-img">
@@ -273,19 +239,17 @@ I promise to carry the values you instilled in me and to make you proud in every
 
             </div>
 
-            <div style="text-align: center;">
-  <strong>Shukurani za Wana wa 4M 🎓✨</strong><br><br>
-  Miaka minne imepita, tukiwa chini ya mikono yako,<br>
-  Ulitupokea watoto, sasa tu wanaume kwa hekima yako,💪<br>
-  Hata tulipokosea na kutaabika katika safari hii,<br>
-  Ulitupokea watoto, sasa tu wanaume kwa hekima yako,<br>
-  Sauti ya kengele ya Baricho sasa inatulia,<br>
-  Lakini mafunzo yako mioyoni mwetu yataendelea kuingia,<br>
-  Asante sana Madam, kwa imani na malezi yako makuu,🌹<br>
-  Daima utabaki kuwa mama yetu, tunakuenzi kwa dhati kuu.💖
-</div>
-
-
+            <div style="text-align: center; margin-top: 50px;">
+                <strong>Shukurani za Wana wa 4M 🎓✨</strong><br><br>
+                Miaka minne imepita, tukiwa chini ya mikono yako,<br>
+                Ulitupokea watoto, sasa tu wanaume kwa hekima yako,💪<br>
+                Hata tulipokosea na kutaabika katika safari hii,<br>
+                Ulitupokea watoto, sasa tu wanaume kwa hekima yako,<br>
+                Sauti ya kengele ya Baricho sasa inatulia,<br>
+                Lakini mafunzo yako mioyoni mwetu yataendelea kuingia,<br>
+                Asante sana Madam, kwa imani na malezi yako makuu,🌹<br>
+                Daima utabaki kuwa mama yetu, tunakuenzi kwa dhati kuu.💖
+            </div>
         </div>
     </div>
 
